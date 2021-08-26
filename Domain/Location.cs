@@ -21,7 +21,7 @@ namespace Domain
 
         private bool IsZipCodeValid()
         {
-            Regex rx = new Regex(@"\b[1-9]{1}\d{4}-[1-9]{1}\d{3}\b");
+            Regex rx = new Regex(@"\b\d{2}-\d{3}\b");
             return rx.IsMatch(ZipCode);
         }
     }
